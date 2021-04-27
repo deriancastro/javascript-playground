@@ -1,17 +1,53 @@
 console.clear()
-const box = document.querySelector('.box')
-const buttonRot = document.querySelector('.button-rotation')
-const buttonBack = document.querySelector('.button-background')
-const buttonRad = document.querySelector('.button-radius')
+const box1 = document.querySelector('.box1')
+const box2 = document.querySelector('.box2')
+const box3 = document.querySelector('.box3')
+const box4 = document.querySelector('.box4')
+const button1 = document.querySelector('.button1')
+const button2 = document.querySelector('.button2')
+const button3 = document.querySelector('.button3')
+const button4 = document.querySelector('.button4')
 
-buttonRot.addEventListener('click', () => {
-  box.classList.add('rotation')
+button1.addEventListener('click', () => {
+  box1.classList.remove('hidden')
+  box2.classList.add('hidden')
+  box3.classList.add('hidden')
+  box4.classList.add('hidden')
+  button1.classList.add('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.remove('highlite')
 })
 
-buttonBack.addEventListener('click', () => {
-  box.classList.toggle('blue')
+button2.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.remove('hidden')
+  box3.classList.add('hidden')
+  box4.classList.add('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.add('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.remove('highlite')
 })
 
-buttonRad.addEventListener('click', () => {
-  box.classList.add('radius')
+button3.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.add('hidden')
+  box3.classList.remove('hidden')
+  box4.classList.add('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.add('highlite')
+  button4.classList.remove('highlite')
+})
+
+button4.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.add('hidden')
+  box3.classList.add('hidden')
+  box4.classList.remove('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.add('highlite')
 })
