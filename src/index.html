@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript App Template</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <script defer type="module" src="./index.js"></script>
-  </head>
 
-  <body>
-    <div class="box" data-box></div>
-    <form data-form>
-      <label>
-        Write a color:
-        <input type="text" data-input placeholder="e.g. Hotpink" />
-      </label>
-      <button>Set color</button>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript App Template</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <script defer type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <div class="box" data-box></div>
+  <div>
+    <input type="range" id="rotation" name="rotation" min="0" max="360" />
+    <label for="rotation">Rotation</label>
+  </div>
+
+</body>
+
 </html>

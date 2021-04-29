@@ -1,14 +1,6 @@
 const box = document.querySelector('[data-box]')
-const input = document.querySelector('[data-input]')
-const form = document.querySelector('[data-form]')
+const rotate = document.querySelector('[name="rotation"]')
 
-console.log(box)
-console.log(input)
-
-form.addEventListener('submit', event => {
-  event.preventDefault()
-  console.log(input.value)
-  box.style.backgroundColor = input.value
-  input.value = ''
-  input.focus()
+rotate.addEventListener('input', event => {
+  box.style.transform = 'rotate(' + rotate.value + 'deg)'
 })
