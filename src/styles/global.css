@@ -3,17 +3,16 @@
 @import './_utility.css';
 
 body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
+  display: flex;
+  gap: 10px;
 }
 
 .box {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: hotpink;
 }
 
 .blue {
-  background: skyblue;
+  background: steelblue;
 }
